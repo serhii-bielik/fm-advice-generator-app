@@ -28,8 +28,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 250px;
-  max-width: 400px;
+  min-width: 320px;
+  max-width: 540px;
   width: 90%;
   margin-top: 30%;
   padding: 1rem;
@@ -73,4 +73,25 @@ body {
 .advice__dice:hover,
 .advice__dice:focus-within {
   box-shadow: var(--clr-neon) 0px 0px 40px;
+}
+
+@media (min-width: 600px) {
+  body {
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .advice {
+    margin: 0;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .advice__id {
+    font-size: 0.8rem;
+  }
+
+  .advice__content {
+    font-size: 1.8rem;
+  }
 }
