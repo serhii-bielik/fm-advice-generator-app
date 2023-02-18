@@ -17,5 +17,32 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
   font-family: 'Manrope', sans-serif;
+}
+
+.advice {
+
+}
+
+.advice__id {
+
+}
+
+.advice__content {
+
+}
+
+.advice__divider {
+
+}
+
+.advice__dice {
+
+}
+
+.advice__dice:hover, 
+.advice__dice:focus-within {
+
 }

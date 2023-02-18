@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-</head>
-<body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="advice">
+      <div class="advice__id">Advice #<span>0</span></div>
+      <h1 class="advice__content"></h1>
+      <picture class="advice__divider">
+        <source
+          media="(min-width: 800px)"
+          srcset="./images/pattern-divider-desktop.svg"
+        />
+        <img src="./images/pattern-divider-mobile.svg" alt="" />
+      </picture>
+      <img
+        src="./images/icon-dice.svg"
+        alt="Get new advice"
+        title="Get new advice"
+        role="button"
+        class="advice__dice"
+      />
+    </section>
+  </body>
 </html>
