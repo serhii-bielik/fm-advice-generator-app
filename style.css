@@ -37,11 +37,16 @@ body {
   position: relative;
 }
 
+#advice__area {
+  transition: all 0.4s ease-in-out;
+}
+
 .advice__id {
   font-weight: 600;
   letter-spacing: 0.3rem;
   font-size: 0.65rem;
   color: var(--clr-neon);
+  text-align: center;
   text-transform: uppercase;
   margin: 1.5rem 0;
 }
