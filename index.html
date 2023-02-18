@@ -16,7 +16,12 @@
   <body>
     <section class="advice">
       <div class="advice__id">Advice #<span>0</span></div>
-      <h1 class="advice__content"></h1>
+      <h1 class="advice__content">
+        &ldquo;<span
+          >It is easy to sit up and take notice, what's difficult is getting up
+          and taking action.</span
+        >&rdquo;
+      </h1>
       <picture class="advice__divider">
         <source
           media="(min-width: 800px)"
@@ -24,13 +29,15 @@
         />
         <img src="./images/pattern-divider-mobile.svg" alt="" />
       </picture>
-      <img
-        src="./images/icon-dice.svg"
-        alt="Get new advice"
-        title="Get new advice"
-        role="button"
-        class="advice__dice"
-      />
+      <div class="advice__dice">
+        <img
+          src="./images/icon-dice.svg"
+          alt="Get new advice"
+          title="Get new advice"
+          role="button"
+          class="advice__dice-img"
+        />
+      </div>
     </section>
   </body>
 </html>

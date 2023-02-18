@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 
 *,
 *::before,
@@ -11,38 +11,66 @@
 :root {
   --clr-cyan: #cee3e9;
   --clr-neon: #52ffa8;
-  --clr-body-bg: #323a49;
-  --clr-section-bg: #4e5d73;
-  --clr-section-bg: #1f2632;
+  --clr-body-bg: #1f2632;
+  --clr-section-bg: #323a49;
+  --clr-sesection-bgction-bg: #4e5d73;
 }
 
 body {
   display: flex;
   justify-content: center;
   font-family: 'Manrope', sans-serif;
+  color: var(--clr-cyan);
+  background-color: var(--clr-body-bg);
 }
 
 .advice {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  max-width: 400px;
+  width: 90%;
+  margin-top: 30%;
+  padding: 1rem;
+  background-color: var(--clr-section-bg);
+  border-radius: 0.5rem;
+  position: relative;
 }
 
 .advice__id {
-
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  font-size: 0.65rem;
+  color: var(--clr-neon);
+  text-transform: uppercase;
+  margin: 1.5rem 0;
 }
 
 .advice__content {
-
+  font-weight: 800;
+  text-align: center;
 }
 
 .advice__divider {
-
+  margin: 1.5rem 0 2.5rem 0;
 }
 
 .advice__dice {
-
+  position: absolute;
+  bottom: -2rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--clr-neon);
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
 
-.advice__dice:hover, 
+.advice__dice:hover,
 .advice__dice:focus-within {
-
+  box-shadow: var(--clr-neon) 0px 0px 40px;
 }
